@@ -9,7 +9,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "prepush": "npm test --single-run && npm lint && npm build --aot --prod"
+    "prepush": "ng lint && ng build --aot --prod && ng test -sr"
   },
   "private": true,
   "dependencies": {
