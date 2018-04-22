@@ -38,7 +38,7 @@ script:
   - ng e2e
   - ng build --aot --prod
   # call script for deploying of produced artifacts
-    - bash ./.travis-deploy-gh-pages.sh
+  - bash ./.travis-deploy-gh-pages.sh
 
 after_script:
   branches:
