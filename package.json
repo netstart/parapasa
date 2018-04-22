@@ -9,6 +9,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
+    "travis-ci": "ng lint && ng test --browsers ChromeTravisCi && ng e2e && npm run build",
     "prepush": "ng lint && ng build --aot --prod && ng test -sr"
   },
   "private": true,

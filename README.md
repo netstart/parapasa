@@ -31,3 +31,26 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 
 ## This project don't use feature folder, the author, Clayton acredita that layer folder is better to organize source code
+
+
+## We use:
+  - https://angular.io
+  - https://material.angular.io/
+  - https://snyk.io/
+  - https://dependabot.com/ - Dependabot creates pull requests to keep your dependencies secure and up-to-date.
+
+
+## To Evaluate
+
+- Code quality - https://github.com/marketplace/category/code-quality
+  
+- Avaliar se dvo usar o logrocket.com para gravar a execucao da aplicação e reportar erros
+
+V55Y - U4H7 - 1DYH - 3MJN - JMHH - 4QZS
+
+- Avaliar outras ferramentas para ajudar no trobleshoot - https://github.com/marketplace/category/monitoring
+
+
+- Codereview tools - https://github.com/marketplace/category/code-review
+
+ 
