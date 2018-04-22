@@ -1,8 +1,12 @@
-import { TestBed, async } from '@angular/core/testing';
-import { AppComponent } from './app.component';
+import {TestBed, async} from '@angular/core/testing';
+import {AppComponent} from './app.component';
+import {MaterialDesignModule} from './share/angular-share/material-design/material-design.module';
+import {AngularShareModule} from './share/angular-share/angular-share.module';
+
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
+      imports: [AngularShareModule],
       declarations: [
         AppComponent
       ],
