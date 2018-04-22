@@ -1,6 +1,6 @@
 # Parapasa
+[![Build Status](https://travis-ci.org/netstart/parapasa.svg?branch=master)](https://travis-ci.org/netstart/parapasa)
 [![Known Vulnerabilities](https://snyk.io/test/github/netstart/parapasa/badge.svg?targetFile=package.json)](https://snyk.io/test/github/netstart/parapasa?targetFile=package.json)
-
 [![Maintainability](https://api.codeclimate.com/v1/badges/e578fb2b6fa6e2adbda1/maintainability)](https://codeclimate.com/github/netstart/parapasa/maintainability)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.4.

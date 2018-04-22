@@ -21,6 +21,10 @@ install:
   - npm ci
 script:
   # run build script specified in package.json
-  - npm run travis-ci
+  #- npm run travis-ci
+  - ng lint
+  - ng test --browsers ChromeTravisCi -sr
+  - ng e2e
+  - npm run build
   # call script for deploying of produced artifacts
   # - bash ./.travis-deploy.sh
