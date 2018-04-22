@@ -7,6 +7,8 @@ echo Deploy to GitHub Pages
 #  echo Deploy to GitHub Pages - Skip deployment because $TRAVIS_TAG is defined
 #else
 
+echo TRAVIS_TAG => $TRAVIS_TAG <= is defined
+
   echo Deploy to GitHub Pages - Start
 
   # go to the directory which contains build artifacts and create a *new* Git repo
