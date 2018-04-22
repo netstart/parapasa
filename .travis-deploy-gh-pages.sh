@@ -3,11 +3,9 @@
 echo Deploy to GitHub Pages
 
 # only deploy tags
-if [ -z "$TRAVIS_TAG" ]; then
-
-  echo Deploy to GitHub Pages - Skip deployment
-
-else
+#if [ -z "$TRAVIS_TAG" ]; then
+#  echo Deploy to GitHub Pages - Skip deployment
+#else
 
   echo Deploy to GitHub Pages - Start
 
@@ -34,6 +32,6 @@ else
 
   echo Deploy to GitHub Pages - Success
 
-fi
+#fi
 
 echo Deploy to GitHub Pages - Finish
