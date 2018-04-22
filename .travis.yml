@@ -30,6 +30,8 @@ before_script:
   - chmod +x ./cc-test-reporter
   - ./cc-test-reporter before-build
 
+  - npm install coveralls
+
 script:
   # run build script specified in package.json
   #- npm run travis-ci
@@ -37,6 +39,9 @@ script:
   - ng test --browsers ChromeTravisCi -sr --code-coverage
   - ng e2e
   - ng build --aot -prod -bh "parapasa" # https://github.com/angular/angular-cli/wiki/stories-github-pages
+
+  - codecov
+
   # call script for deploying of produced artifacts
   - bash ./.travis-deploy-gh-pages.sh
 
