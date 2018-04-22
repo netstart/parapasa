@@ -3,6 +3,8 @@
 [![Known Vulnerabilities](https://snyk.io/test/github/netstart/parapasa/badge.svg?targetFile=package.json)](https://snyk.io/test/github/netstart/parapasa?targetFile=package.json)
 [![Maintainability](https://api.codeclimate.com/v1/badges/e578fb2b6fa6e2adbda1/maintainability)](https://codeclimate.com/github/netstart/parapasa/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/e578fb2b6fa6e2adbda1/test_coverage)](https://codeclimate.com/github/netstart/parapasa/test_coverage)
+[![dependencies Status](https://david-dm.org/netstart/parapasa/status.svg)](https://david-dm.org/netstart/parapasa)
+[![devDependencies Status](https://david-dm.org/netstart/parapasa/dev-status.svg)](https://david-dm.org/netstart/parapasa?type=dev)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.4.
 
