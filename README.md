@@ -51,9 +51,9 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 V55Y - U4H7 - 1DYH - 3MJN - JMHH - 4QZS
 
 - Avaliar outras ferramentas para ajudar no trobleshoot - https://github.com/marketplace/category/monitoring
-
 - Codereview tools - https://github.com/marketplace/category/code-review
 - https://coveralls.io/
+- sonarcloud.io/
 
  
  
