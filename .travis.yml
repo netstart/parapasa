@@ -36,7 +36,7 @@ script:
   - ng lint
   - ng test --browsers ChromeTravisCi -sr --code-coverage
   - ng e2e
-  - ng build --aot --prod
+  - ng build --aot --prod --base-href "/parapasa"
   # call script for deploying of produced artifacts
   - bash ./.travis-deploy-gh-pages.sh
 
