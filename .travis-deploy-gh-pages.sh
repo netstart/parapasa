@@ -7,8 +7,6 @@ echo Deploy to GitHub Pages
 #  echo Deploy to GitHub Pages - Skip deployment because $TRAVIS_TAG is defined
 #else
 
-echo TRAVIS_TAG => $TRAVIS_TAG <= is defined
-
   echo Deploy to GitHub Pages - Start
 
   # go to the directory which contains build artifacts and create a *new* Git repo
@@ -30,7 +28,7 @@ echo TRAVIS_TAG => $TRAVIS_TAG <= is defined
   # will be lost, since we are overwriting it.) We redirect any output to
   # /dev/null to hide any sensitive credential data that might otherwise be exposed.
   # tokens GH_TOKEN and GH_REF will be provided as Travis CI environment variables
-  git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:gh-pages > /dev/null 2>&1
+  git push --force "https://${GH_TOKEN}@${GH_REF}" master:gh-pages
 
   echo Deploy to GitHub Pages - Success
 
