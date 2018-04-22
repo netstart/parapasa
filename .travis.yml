@@ -38,10 +38,11 @@ script:
   - ng e2e
   - ng build --aot --prod
   # call script for deploying of produced artifacts
+    - bash ./.travis-deploy-gh-pages.sh
 
 after_script:
   branches:
     only:
     - master
     - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
-    - bash ./.travis-deploy-gh-pages.sh
+
