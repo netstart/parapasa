@@ -23,8 +23,9 @@ script:
   # run build script specified in package.json
   #- npm run travis-ci
   - ng lint
-  - ng test --browsers ChromeTravisCi -sr
+  - ng test --browsers ChromeTravisCi -sr --code-coverage
   - ng e2e
   - npm run build
+  - ng build --aot --prod
   # call script for deploying of produced artifacts
   # - bash ./.travis-deploy.sh

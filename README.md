@@ -39,6 +39,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
   - https://snyk.io/
   - https://dependabot.com/ - Dependabot creates pull requests to keep your dependencies secure and up-to-date.
   - https://codeclimate.com/github/netstart/parapasa - Code Climate incorporates structure, style, and test coverage data into your development workflow, so your team can ship better code, faster.
+  - https://teams.deepaffects.com/github/netstart/parapasa/summary
 
 
 ## To Evaluate
