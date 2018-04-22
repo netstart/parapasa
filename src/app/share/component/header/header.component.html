@@ -1,9 +1,11 @@
 <div class="toolbar">
   <mat-toolbar>
+    <button mat-icon-button (click)="sidenav.toggle()">
+      <mat-icon>menu</mat-icon>
+    </button>
     <span class="toolbar-title"><a routerLink="/home">Parapasa</a></span>
     <a mat-button routerLink="/about">About</a>
     <a mat-button routerLink="/contact">Contact</a>
-
     <span class="fill-remaining"></span>
     <a mat-button routerLink="/signup">
       <mat-icon>person_add</mat-icon>
@@ -14,7 +16,6 @@
     <a mat-icon-button [matMenuTriggerFor]="appMenu">
       <mat-icon>more_vert</mat-icon>
     </a>
-
     <mat-menu #appMenu="matMenu">
       <a mat-menu-item routerLink="/profile">
         <mat-icon>face</mat-icon>
@@ -32,7 +33,5 @@
       </button>
     </mat-menu>
   </mat-toolbar>
-
-
 
 </div>
