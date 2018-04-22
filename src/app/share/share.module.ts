@@ -1,7 +1,7 @@
 import {NgModule} from '@angular/core';
 import {AngularShareModule} from './angular-share/angular-share.module';
-import {HeaderComponent} from './component/header/header.component';
-import {FooterComponent} from './component/footer/footer.component';
+import {HeaderComponent} from './component/layout/header/header.component';
+import {FooterComponent} from './component/layout/footer/footer.component';
 
 @NgModule({
   imports: [
