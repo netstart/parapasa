@@ -15,7 +15,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
     AppComponent
   ],
   imports: [
-    BrowserModule, CommonModule, HttpClientModule, ReactiveFormsModule, BrowserAnimationsModule,
+    BrowserModule, CommonModule, HttpClientModule, ReactiveFormsModule,
     MaterialDesignModule
   ],
   providers: [],
