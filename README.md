@@ -1,7 +1,10 @@
 # Parapasa
+[![Build Status](https://travis-ci.org/netstart/parapasa.svg?branch=master)](https://travis-ci.org/netstart/parapasa)
 [![Known Vulnerabilities](https://snyk.io/test/github/netstart/parapasa/badge.svg?targetFile=package.json)](https://snyk.io/test/github/netstart/parapasa?targetFile=package.json)
-
-
+[![Maintainability](https://api.codeclimate.com/v1/badges/e578fb2b6fa6e2adbda1/maintainability)](https://codeclimate.com/github/netstart/parapasa/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/e578fb2b6fa6e2adbda1/test_coverage)](https://codeclimate.com/github/netstart/parapasa/test_coverage)
+[![dependencies Status](https://david-dm.org/netstart/parapasa/status.svg)](https://david-dm.org/netstart/parapasa)
+[![devDependencies Status](https://david-dm.org/netstart/parapasa/dev-status.svg)](https://david-dm.org/netstart/parapasa?type=dev)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.4.
 
@@ -31,3 +34,29 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 
 ## This project don't use feature folder, the author, Clayton acredita that layer folder is better to organize source code
+
+
+## We use:
+  - https://angular.io
+  - https://material.angular.io/
+  - https://snyk.io/
+  - https://dependabot.com/ - Dependabot creates pull requests to keep your dependencies secure and up-to-date.
+  - https://codeclimate.com/github/netstart/parapasa - Code Climate incorporates structure, style, and test coverage data into your development workflow, so your team can ship better code, faster.
+  - https://teams.deepaffects.com/github/netstart/parapasa/summary
+
+
+## To Evaluate
+
+- Code quality - https://github.com/marketplace/category/code-quality
+  
+- Avaliar se dvo usar o logrocket.com para gravar a execucao da aplicação e reportar erros
+
+V55Y - U4H7 - 1DYH - 3MJN - JMHH - 4QZS
+
+- Avaliar outras ferramentas para ajudar no trobleshoot - https://github.com/marketplace/category/monitoring
+- Codereview tools - https://github.com/marketplace/category/code-review
+- https://coveralls.io/
+- sonarcloud.io/
+
+ 
+ 

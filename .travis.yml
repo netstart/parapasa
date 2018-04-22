@@ -1,0 +1,44 @@
+language: node_js
+
+node_js:
+  - "node"
+sudo: required
+dist: trusty
+
+notifications:
+  email: false
+
+env:
+  global:
+    - CC_TEST_REPORTER_ID=a755d3a7a40d2f0b27f4e56011fcce2f6a9014b46d0ce01308ffa91462819c66
+
+addons:
+  chrome: stable
+cache:
+  directories:
+  - $HOME/.npm
+before_install:
+  - export CHROME_BIN=chromium-browser
+  - export DISPLAY=:99.0
+  - sh -e /etc/init.d/xvfb start
+install:
+  - npm i -g npm
+  - npm ci
+
+before_script:
+  - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
+  - chmod +x ./cc-test-reporter
+  - ./cc-test-reporter before-build
+
+script:
+  # run build script specified in package.json
+  #- npm run travis-ci
+  - ng lint
+  - ng test --browsers ChromeTravisCi -sr --code-coverage
+  - ng e2e
+  - ng build --aot --prod
+  # call script for deploying of produced artifacts
+  - bash ./.travis-deploy-gh-pages.sh
+
+after_script:
+  - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT

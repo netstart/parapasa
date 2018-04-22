@@ -6,9 +6,10 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build --prod",
-    "test": "ng test",
+    "test": "ng test -sr",
     "lint": "ng lint",
     "e2e": "ng e2e",
+    "travis-ci": "ng lint && ng test --browsers ChromeTravisCi -sr && ng e2e && npm run build",
     "prepush": "ng lint && ng build --aot --prod && ng test -sr"
   },
   "private": true,
