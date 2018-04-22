@@ -1,35 +1,5 @@
-<div>
-  <mat-toolbar color="primary">
-    <button mat-icon-button (click)="snav.toggle()">
-      <mat-icon>menu</mat-icon>
-    </button>
-    <h1 class="example-app-name">Responsive App</h1>
-  </mat-toolbar>
-
-  <mat-sidenav-container class="example-sidenav-container">
-    <mat-sidenav #snav>
-      <mat-nav-list>
-        <p>xxxxxx</p>
-        <p>zzzzzz</p>
-        <p>yyyyyy</p>
-      </mat-nav-list>
-    </mat-sidenav>
-
-    <mat-sidenav-content>
-      <p>xxxxxx</p>
-      <p>zzzzzz</p>
-      <p>yyyyyy</p>        <p>xxxxxx</p>
-      <p>zzzzzz</p>
-      <p>yyyyyy</p>        <p>xxxxxx</p>
-      <p>zzzzzz</p>
-      <p>yyyyyy</p>        <p>xxxxxx</p>
-      <p>zzzzzz</p>
-      <p>yyyyyy</p>        <p>xxxxxx</p>
-      <p>zzzzzz</p>
-      <p>yyyyyy</p>        <p>xxxxxx</p>
-      <p>zzzzzz</p>
-      <p>yyyyyy</p>
-    </mat-sidenav-content>
-
-  </mat-sidenav-container>
-</div>
+<app-header></app-header>
+<section id="main">
+  <router-outlet></router-outlet>
+</section>
+<app-footer></app-footer>

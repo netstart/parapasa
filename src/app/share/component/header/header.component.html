@@ -1,0 +1,38 @@
+<div class="toolbar">
+  <mat-toolbar>
+    <span class="toolbar-title"><a routerLink="/home">Parapasa</a></span>
+    <a mat-button routerLink="/about">About</a>
+    <a mat-button routerLink="/contact">Contact</a>
+
+    <span class="fill-remaining"></span>
+    <a mat-button routerLink="/signup">
+      <mat-icon>person_add</mat-icon>
+      Register</a>
+    <a mat-button routerLink="/signin">
+      <mat-icon>lock_open</mat-icon>
+      Sign In</a>
+    <a mat-icon-button [matMenuTriggerFor]="appMenu">
+      <mat-icon>more_vert</mat-icon>
+    </a>
+
+    <mat-menu #appMenu="matMenu">
+      <a mat-menu-item routerLink="/profile">
+        <mat-icon>face</mat-icon>
+        <span>Profile</span></a>
+      <a mat-menu-item (click)="onLogout()">
+        <mat-icon>lock_outline</mat-icon>
+        <span>Logout</span></a>
+      <button mat-menu-item disabled>
+        <mat-icon>voicemail</mat-icon>
+        <span>Check voicemail</span>
+      </button>
+      <button mat-menu-item>
+        <mat-icon>notifications_off</mat-icon>
+        <span>Disable alerts</span>
+      </button>
+    </mat-menu>
+  </mat-toolbar>
+
+
+
+</div>
