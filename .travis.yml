@@ -3,6 +3,10 @@ node_js:
   - "node"
 sudo: required
 dist: trusty
+
+notifications:
+  email: false
+
 addons:
   chrome: stable
 cache:

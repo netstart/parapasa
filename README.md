@@ -1,7 +1,7 @@
 # Parapasa
 [![Known Vulnerabilities](https://snyk.io/test/github/netstart/parapasa/badge.svg?targetFile=package.json)](https://snyk.io/test/github/netstart/parapasa?targetFile=package.json)
 
-
+[![Maintainability](https://api.codeclimate.com/v1/badges/e578fb2b6fa6e2adbda1/maintainability)](https://codeclimate.com/github/netstart/parapasa/maintainability)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.4.
 
@@ -38,6 +38,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
   - https://material.angular.io/
   - https://snyk.io/
   - https://dependabot.com/ - Dependabot creates pull requests to keep your dependencies secure and up-to-date.
+  - https://codeclimate.com/github/netstart/parapasa - Code Climate incorporates structure, style, and test coverage data into your development workflow, so your team can ship better code, faster.
 
 
 ## To Evaluate
@@ -50,7 +51,8 @@ V55Y - U4H7 - 1DYH - 3MJN - JMHH - 4QZS
 
 - Avaliar outras ferramentas para ajudar no trobleshoot - https://github.com/marketplace/category/monitoring
 
-
 - Codereview tools - https://github.com/marketplace/category/code-review
+- https://coveralls.io/
 
+ 
  
