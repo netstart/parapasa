@@ -30,13 +30,20 @@ before_script:
   - chmod +x ./cc-test-reporter
   - ./cc-test-reporter before-build
 
+  - npm install -g codecov
+  - npm install coveralls
+
 script:
   # run build script specified in package.json
   #- npm run travis-ci
   - ng lint
   - ng test --browsers ChromeTravisCi -sr --code-coverage
   - ng e2e
-  - ng build --aot --prod
+  - ng build --aot -prod -bh "parapasa" # https://github.com/angular/angular-cli/wiki/stories-github-pages
+
+  - codecov
+  - cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js
+
   # call script for deploying of produced artifacts
   - bash ./.travis-deploy-gh-pages.sh
 
@@ -45,3 +52,4 @@ after_script:
     only:
     - master
     - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
+
