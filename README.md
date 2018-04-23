@@ -48,8 +48,14 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 
 ## To Evaluate
-
+- https://github.com/marketplace/codefactor
+- https://circleci.com/
 - Code quality - https://github.com/marketplace/category/code-quality
+- https://github.com/marketplace/codacy
+- https://github.com/marketplace/category/monitoring
+- https://about.pullapprove.com/
+- https://github.com/marketplace/pull-reminders
+- https://github.com/marketplace/renovate/
   
 - Avaliar se dvo usar o logrocket.com para gravar a execucao da aplicação e reportar erros
 
