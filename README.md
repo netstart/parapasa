@@ -1,5 +1,6 @@
 # Parapasa
 [![Build Status](https://travis-ci.org/netstart/parapasa.svg?branch=master)](https://travis-ci.org/netstart/parapasa)
+[![CodeFactor](https://www.codefactor.io/repository/github/netstart/parapasa/badge)](https://www.codefactor.io/repository/github/netstart/parapasa)
 [![Known Vulnerabilities](https://snyk.io/test/github/netstart/parapasa/badge.svg?targetFile=package.json)](https://snyk.io/test/github/netstart/parapasa?targetFile=package.json)
 [![Maintainability](https://api.codeclimate.com/v1/badges/e578fb2b6fa6e2adbda1/maintainability)](https://codeclimate.com/github/netstart/parapasa/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/e578fb2b6fa6e2adbda1/test_coverage)](https://codeclimate.com/github/netstart/parapasa/test_coverage)
