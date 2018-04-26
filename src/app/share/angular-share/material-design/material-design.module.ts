@@ -34,12 +34,10 @@ import {
   MatToolbarModule,
   MatTooltipModule
 } from '@angular/material';
-import {FlexLayoutModule} from '@angular/flex-layout';
 import {CdkTableModule} from '@angular/cdk/table';
 
 @NgModule({
   imports: [
-    FlexLayoutModule,
     MatFormFieldModule, MatDividerModule,
     MatAutocompleteModule, MatButtonModule, MatButtonToggleModule, MatCardModule, MatCheckboxModule, MatChipsModule,
     MatDatepickerModule, MatDialogModule, MatExpansionModule, MatGridListModule, MatIconModule, MatInputModule, MatListModule,
@@ -51,7 +49,6 @@ import {CdkTableModule} from '@angular/cdk/table';
     CdkTableModule
   ],
   exports: [
-    FlexLayoutModule,
     MatFormFieldModule, MatDividerModule,
     MatAutocompleteModule, MatButtonModule, MatButtonToggleModule, MatCardModule, MatCheckboxModule, MatChipsModule,
     MatDatepickerModule, MatDialogModule, MatExpansionModule, MatGridListModule, MatIconModule, MatInputModule, MatListModule,
