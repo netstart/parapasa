@@ -1,4 +1,4 @@
-import { AppPage } from './app.po';
+import {AppPage} from './app.po';
 
 describe('parapasa App', () => {
   let page: AppPage;
@@ -7,7 +7,7 @@ describe('parapasa App', () => {
     page = new AppPage();
   });
 
- xit('should display welcome message', () => {
+  xit('should display welcome message', () => {
     page.navigateTo();
     expect(page.getParagraphText()).toEqual('Welcome to app!');
   });
