@@ -39,7 +39,7 @@ script:
   - ng lint
   - ng test --browsers ChromeTravisCi -sr --code-coverage
   - ng e2e
-  - ng build --aot -prod -bh "/parapasa" # https://github.com/angular/angular-cli/wiki/stories-github-pages
+  - ng build --aot -prod -bh "https://netstart.github.io/parapasa/" # https://github.com/angular/angular-cli/wiki/stories-github-pages
 
   - codecov
   - cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js
