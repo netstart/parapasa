@@ -1,19 +1,13 @@
 import {NgModule} from '@angular/core';
 import {
-  MatAutocompleteModule,
-  MatButtonModule, MatButtonToggleModule,
-  MatCardModule,
+  MatAutocompleteModule, MatButtonModule, MatButtonToggleModule, MatCardModule,
   MatCheckboxModule, MatChipsModule, MatDatepickerModule,
   MatDialogModule, MatDividerModule, MatExpansionModule, MatGridListModule,
-  MatIconModule,
-  MatInputModule,
-  MatListModule,
+  MatIconModule, MatInputModule, MatListModule,
   MatMenuModule, MatNativeDateModule, MatPaginatorModule, MatProgressBarModule, MatProgressSpinnerModule, MatRadioModule, MatRippleModule,
-  MatSelectModule,
-  MatSidenavModule, MatSliderModule,
+  MatSelectModule, MatSidenavModule, MatSliderModule,
   MatSlideToggleModule, MatSnackBarModule, MatSortModule, MatStepperModule, MatTableModule,
-  MatTabsModule,
-  MatToolbarModule, MatTooltipModule
+  MatTabsModule, MatToolbarModule, MatTooltipModule
 } from '@angular/material';
 import {FlexLayoutModule} from '@angular/flex-layout';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
