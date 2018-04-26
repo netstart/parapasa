@@ -1,6 +1,5 @@
 import {NgModule} from '@angular/core';
-import {RouterModule, Routes} from '@angular/router';
-import {SearchComponent} from './page/search/search.component';
+import {RouterModule} from '@angular/router';
 
 @NgModule({
   imports: [RouterModule.forRoot([])],
