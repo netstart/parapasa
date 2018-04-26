@@ -7,6 +7,7 @@ import {ShareModule} from './share/share.module';
 import {AppRoutingModule} from './app.routing';
 import {ComponentModule} from './component/component.module';
 import {PageModule} from './page/page.module';
+import {ServiceModule} from './model/service/service.module';
 
 
 @NgModule({
@@ -16,9 +17,10 @@ import {PageModule} from './page/page.module';
   imports: [
     BrowserModule,
     ShareModule,
-    AppRoutingModule,
     ComponentModule,
-    PageModule
+    PageModule,
+    ServiceModule,
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
