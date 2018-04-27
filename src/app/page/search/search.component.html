@@ -1,29 +1,46 @@
-<button mat-icon-button color="primary" (click)="search()">
-  <mat-icon>favorite</mat-icon>
-</button>
+<div class="row">
+  <div class="col">
+    <button mat-icon-button color="primary" (click)="search()">
+      <mat-icon>favorite</mat-icon>
+    </button>
+  </div>
+</div>
+
+<div class="flex-container">
+  <mat-card *ngFor="let issue of (issuesFrontendBr$ | async); let i = index">
+    <a href="{{issue.html_url}}">{{issue.title}}</a>
+  </mat-card>
+</div>
+
+<div class="flex-container">
+  <mat-card *ngFor="let issue of (backendBr$ | async); let i = index">
+    <a href="{{issue.html_url}}">{{issue.title}}</a>
+  </mat-card>
+</div>
+
+<div class="flex-container">
+  <mat-card *ngFor="let issue of (backendBrService$ | async); let i = index">
+    <a href="{{issue.html_url}}">{{issue.title}}</a>
+  </mat-card>
+</div>
+
+<div class="flex-container">
+  <mat-card *ngFor="let issue of (reactBrasilService$ | async); let i = index">
+    <a href="{{issue.html_url}}">{{issue.title}}</a>
+  </mat-card>
+</div>
+
+<div class="flex-container">
+  <mat-card *ngFor="let issue of (soujava$ | async); let i = index">
+    <a href="{{issue.html_url}}">{{issue.title}}</a>
+  </mat-card>
+</div>
 
 
-<mat-card *ngFor="let issue of (issuesFrontendBr$ | async)">
-  <a href="{{issue.html_url}}">{{issue.title}}</a>
-</mat-card>
+<div class="flex-container">
+  <mat-card *ngFor="let issue of (androidDevBr$ | async); let i = index">
+    <a href="{{issue.html_url}}">{{issue.title}}</a>
+  </mat-card>
+</div>
 
-<mat-card *ngFor="let issue of (backendBr$ | async)">
-  <a href="{{issue.html_url}}">{{issue.title}}</a>
-</mat-card>
-
-<mat-card *ngFor="let issue of (backendBrService$ | async)">
-  <a href="{{issue.html_url}}">{{issue.title}}</a>
-</mat-card>
-
-<mat-card *ngFor="let issue of (reactBrasilService$ | async)">
-  <a href="{{issue.html_url}}">{{issue.title}}</a>
-</mat-card>
-
-<mat-card *ngFor="let issue of (soujava$ | async)">
-  <a href="{{issue.html_url}}">{{issue.title}}</a>
-</mat-card>
-
-<mat-card *ngFor="let issue of (androidDevBr$ | async)">
-  <a href="{{issue.html_url}}">{{issue.title}}</a>
-</mat-card>
 
