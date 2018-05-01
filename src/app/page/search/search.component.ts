@@ -40,4 +40,8 @@ export class SearchComponent implements OnInit {
     this.soujava$ = this.soujavaService.issues('');
     this.androidDevBr$ = this.androidDevBrService.issues('');
   }
+
+  trackByFn(index, item) {
+    return index; // or item.id
+  }
 }

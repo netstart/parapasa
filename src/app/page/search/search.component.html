@@ -6,41 +6,78 @@
   </div>
 </div>
 
-<div class="flex-container">
-  <mat-card *ngFor="let issue of (issuesFrontendBr$ | async); let i = index">
-    <a href="{{issue.html_url}}">{{issue.title}}</a>
-  </mat-card>
-</div>
 
 <div class="flex-container">
-  <mat-card *ngFor="let issue of (backendBr$ | async); let i = index">
-    <a href="{{issue.html_url}}">{{issue.title}}</a>
+  <mat-card *ngFor="let issue of (issuesFrontendBr$ | async); trackBy: trackByFn">
+    <mat-card-header>
+      <img mat-card-avatar src="{{issue.user.avatar_url}}">
+      <mat-card-title><a href="{{issue.user.url}}">{{issue.user.login}}</a></mat-card-title>
+      <mat-card-subtitle><a href="{{issue.html_url}}">{{issue.title}}</a></mat-card-subtitle>
+    </mat-card-header>
+    <!--<img mat-card-image src="https://source.unsplash.com/random/800x600">-->
+    <!--<mat-card-content>-->
+    <!--<p> {{issue.body}}</p>-->
+    <!--</mat-card-content>-->
+  </mat-card>
+
+  <mat-card *ngFor="let issue of (backendBr$ | async); trackBy: trackByFn">
+    <mat-card-header>
+      <img mat-card-avatar src="{{issue.user.avatar_url}}">
+      <mat-card-title><a href="{{issue.user.url}}">{{issue.user.login}}</a></mat-card-title>
+      <mat-card-subtitle><a href="{{issue.html_url}}">{{issue.title}}</a></mat-card-subtitle>
+    </mat-card-header>
+    <!--<img mat-card-image src="https://source.unsplash.com/random/800x600">-->
+    <!--<mat-card-content>-->
+    <!--<p> {{issue.body}}</p>-->
+    <!--</mat-card-content>-->
+  </mat-card>
+
+  <mat-card *ngFor="let issue of (backendBrService$ | async); trackBy: trackByFn">
+    <mat-card-header>
+      <img mat-card-avatar src="{{issue.user.avatar_url}}">
+      <mat-card-title><a href="{{issue.user.url}}">{{issue.user.login}}</a></mat-card-title>
+      <mat-card-subtitle><a href="{{issue.html_url}}">{{issue.title}}</a></mat-card-subtitle>
+    </mat-card-header>
+    <!--<img mat-card-image src="https://source.unsplash.com/random/800x600">-->
+    <!--<mat-card-content>-->
+    <!--<p> {{issue.body}}</p>-->
+    <!--</mat-card-content>-->
+  </mat-card>
+
+  <mat-card *ngFor="let issue of (reactBrasilService$ | async); trackBy: trackByFn">
+    <mat-card-header>
+      <img mat-card-avatar src="{{issue.user.avatar_url}}">
+      <mat-card-title><a href="{{issue.user.url}}">{{issue.user.login}}</a></mat-card-title>
+      <mat-card-subtitle><a href="{{issue.html_url}}">{{issue.title}}</a></mat-card-subtitle>
+    </mat-card-header>
+    <!--<img mat-card-image src="https://source.unsplash.com/random/800x600">-->
+    <!--<mat-card-content>-->
+    <!--<p> {{issue.body}}</p>-->
+    <!--</mat-card-content>-->
+  </mat-card>
+
+  <mat-card *ngFor="let issue of (soujava$ | async); trackBy: trackByFn">
+    <mat-card-header>
+      <img mat-card-avatar src="{{issue.user.avatar_url}}">
+      <mat-card-title><a href="{{issue.user.url}}">{{issue.user.login}}</a></mat-card-title>
+      <mat-card-subtitle><a href="{{issue.html_url}}">{{issue.title}}</a></mat-card-subtitle>
+    </mat-card-header>
+    <!--<img mat-card-image src="https://source.unsplash.com/random/800x600">-->
+    <!--<mat-card-content>-->
+    <!--<p> {{issue.body}}</p>-->
+    <!--</mat-card-content>-->
+  </mat-card>
+
+  <mat-card *ngFor="let issue of (androidDevBr$ | async); trackBy: trackByFn">
+    <mat-card-header>
+      <img mat-card-avatar src="{{issue.user.avatar_url}}">
+      <mat-card-title><a href="{{issue.user.url}}">{{issue.user.login}}</a></mat-card-title>
+      <mat-card-subtitle><a href="{{issue.html_url}}">{{issue.title}}</a></mat-card-subtitle>
+    </mat-card-header>
+    <!--<img mat-card-image src="https://source.unsplash.com/random/800x600">-->
+    <!--<mat-card-content>-->
+    <!--<p> {{issue.body}}</p>-->
+    <!--</mat-card-content>-->
   </mat-card>
 </div>
-
-<div class="flex-container">
-  <mat-card *ngFor="let issue of (backendBrService$ | async); let i = index">
-    <a href="{{issue.html_url}}">{{issue.title}}</a>
-  </mat-card>
-</div>
-
-<div class="flex-container">
-  <mat-card *ngFor="let issue of (reactBrasilService$ | async); let i = index">
-    <a href="{{issue.html_url}}">{{issue.title}}</a>
-  </mat-card>
-</div>
-
-<div class="flex-container">
-  <mat-card *ngFor="let issue of (soujava$ | async); let i = index">
-    <a href="{{issue.html_url}}">{{issue.title}}</a>
-  </mat-card>
-</div>
-
-
-<div class="flex-container">
-  <mat-card *ngFor="let issue of (androidDevBr$ | async); let i = index">
-    <a href="{{issue.html_url}}">{{issue.title}}</a>
-  </mat-card>
-</div>
-
 
