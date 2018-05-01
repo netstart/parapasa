@@ -5,6 +5,7 @@ import {Github3BackendbrVagasService} from '../../model/service/github-api-3/git
 import {Github3ReactBrasilService} from '../../model/service/github-api-3/github-3-react-brasil.service';
 import {Github3SoujavaService} from '../../model/service/github-api-3/github-3-soujava.service';
 import {Github3AndroidDevBrService} from '../../model/service/github-api-3/github-3-androiddevbr.service';
+import {KonngLabsMaringaService} from '../../model/service/konng-labs/konng-labs-maringa.service';
 
 @Component({
   selector: 'app-search',
@@ -19,11 +20,15 @@ export class SearchComponent implements OnInit {
   soujava$: Observable<any>;
   androidDevBr$: Observable<any>;
 
+  // maringa$: Observable<any>;
+
   constructor(private frontendbrService: Github3FrontendbrService,
               private backendBrService: Github3BackendbrVagasService,
               private reactBrasilService: Github3ReactBrasilService,
               private soujavaService: Github3SoujavaService,
-              private androidDevBrService: Github3AndroidDevBrService) {
+              private androidDevBrService: Github3AndroidDevBrService,
+              // private konngLabsMaringaService: KonngLabsMaringaService
+  ) {
   }
 
   ngOnInit() {
@@ -35,6 +40,7 @@ export class SearchComponent implements OnInit {
     this.reactBrasilService$ = this.reactBrasilService.issues();
     this.soujava$ = this.soujavaService.issues();
     this.androidDevBr$ = this.androidDevBrService.issues();
+    // this.maringa$ = this.konngLabsMaringaService.all();
   }
 
   trackByFn(index, item) {
