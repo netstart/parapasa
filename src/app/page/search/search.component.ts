@@ -33,12 +33,12 @@ export class SearchComponent implements OnInit {
   }
 
   search() {
-    this.issuesFrontendBr$ = this.frontendbrService.issues('');
-    this.backendBr$ = this.mecontrataService.issues('');
-    this.backendBrService$ = this.backendBrService.issues('');
-    this.reactBrasilService$ = this.reactBrasilService.issues('');
-    this.soujava$ = this.soujavaService.issues('');
-    this.androidDevBr$ = this.androidDevBrService.issues('');
+    this.issuesFrontendBr$ = this.frontendbrService.issues();
+    this.backendBr$ = this.mecontrataService.issues();
+    this.backendBrService$ = this.backendBrService.issues();
+    this.reactBrasilService$ = this.reactBrasilService.issues();
+    this.soujava$ = this.soujavaService.issues();
+    this.androidDevBr$ = this.androidDevBrService.issues();
   }
 
   trackByFn(index, item) {

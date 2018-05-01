@@ -8,76 +8,90 @@
 
 
 <div class="flex-container">
-  <mat-card *ngFor="let issue of (issuesFrontendBr$ | async); trackBy: trackByFn">
-    <mat-card-header>
-      <img mat-card-avatar src="{{issue.user.avatar_url}}">
-      <mat-card-title><a href="{{issue.user.url}}">{{issue.user.login}}</a></mat-card-title>
-      <mat-card-subtitle><a href="{{issue.html_url}}">{{issue.title}}</a></mat-card-subtitle>
-    </mat-card-header>
-    <!--<img mat-card-image src="https://source.unsplash.com/random/800x600">-->
-    <!--<mat-card-content>-->
-    <!--<p> {{issue.body}}</p>-->
-    <!--</mat-card-content>-->
+  <mat-card *ngFor="let issue of (issuesFrontendBr$ | async); trackBy: trackByFn" routerLink="">
+    <a href="{{issue.html_url}}">
+      <mat-card-header>
+        <img mat-card-avatar src="{{issue.user.avatar_url}}">
+        <mat-card-title>{{issue.user.login}}</mat-card-title>
+        <mat-card-subtitle>{{issue.title}}</mat-card-subtitle>
+      </mat-card-header>
+      <!--<img mat-card-image src="https://source.unsplash.com/random/800x600">-->
+      <!--<mat-card-content>-->
+      <!--<p> {{issue.body}}</p>-->
+      <!--</mat-card-content>-->
+    </a>
   </mat-card>
 
-  <mat-card *ngFor="let issue of (backendBr$ | async); trackBy: trackByFn">
-    <mat-card-header>
-      <img mat-card-avatar src="{{issue.user.avatar_url}}">
-      <mat-card-title><a href="{{issue.user.url}}">{{issue.user.login}}</a></mat-card-title>
-      <mat-card-subtitle><a href="{{issue.html_url}}">{{issue.title}}</a></mat-card-subtitle>
-    </mat-card-header>
-    <!--<img mat-card-image src="https://source.unsplash.com/random/800x600">-->
-    <!--<mat-card-content>-->
-    <!--<p> {{issue.body}}</p>-->
-    <!--</mat-card-content>-->
+
+  <mat-card *ngFor="let issue of (backendBr$ | async); trackBy: trackByFn" routerLink="">
+    <a href="{{issue.html_url}}">
+      <mat-card-header>
+        <img mat-card-avatar src="{{issue.user.avatar_url}}">
+        <mat-card-title>{{issue.user.login}}</mat-card-title>
+        <mat-card-subtitle>{{issue.title}}</mat-card-subtitle>
+      </mat-card-header>
+      <!--<img mat-card-image src="https://source.unsplash.com/random/800x600">-->
+      <!--<mat-card-content>-->
+      <!--<p> {{issue.body}}</p>-->
+      <!--</mat-card-content>-->
+    </a>
   </mat-card>
 
-  <mat-card *ngFor="let issue of (backendBrService$ | async); trackBy: trackByFn">
-    <mat-card-header>
-      <img mat-card-avatar src="{{issue.user.avatar_url}}">
-      <mat-card-title><a href="{{issue.user.url}}">{{issue.user.login}}</a></mat-card-title>
-      <mat-card-subtitle><a href="{{issue.html_url}}">{{issue.title}}</a></mat-card-subtitle>
-    </mat-card-header>
-    <!--<img mat-card-image src="https://source.unsplash.com/random/800x600">-->
-    <!--<mat-card-content>-->
-    <!--<p> {{issue.body}}</p>-->
-    <!--</mat-card-content>-->
+  <mat-card *ngFor="let issue of (backendBrService$ | async); trackBy: trackByFn" routerLink="">
+    <a href="{{issue.html_url}}">
+      <mat-card-header>
+        <img mat-card-avatar src="{{issue.user.avatar_url}}">
+        <mat-card-title>{{issue.user.login}}</mat-card-title>
+        <mat-card-subtitle>{{issue.title}}</mat-card-subtitle>
+      </mat-card-header>
+      <!--<img mat-card-image src="https://source.unsplash.com/random/800x600">-->
+      <!--<mat-card-content>-->
+      <!--<p> {{issue.body}}</p>-->
+      <!--</mat-card-content>-->
+    </a>
   </mat-card>
 
-  <mat-card *ngFor="let issue of (reactBrasilService$ | async); trackBy: trackByFn">
-    <mat-card-header>
-      <img mat-card-avatar src="{{issue.user.avatar_url}}">
-      <mat-card-title><a href="{{issue.user.url}}">{{issue.user.login}}</a></mat-card-title>
-      <mat-card-subtitle><a href="{{issue.html_url}}">{{issue.title}}</a></mat-card-subtitle>
-    </mat-card-header>
-    <!--<img mat-card-image src="https://source.unsplash.com/random/800x600">-->
-    <!--<mat-card-content>-->
-    <!--<p> {{issue.body}}</p>-->
-    <!--</mat-card-content>-->
+  <mat-card *ngFor="let issue of (reactBrasilService$ | async); trackBy: trackByFn" routerLink="">
+    <a href="{{issue.html_url}}">
+      <mat-card-header>
+        <img mat-card-avatar src="{{issue.user.avatar_url}}">
+        <mat-card-title>{{issue.user.login}}</mat-card-title>
+        <mat-card-subtitle>{{issue.title}}</mat-card-subtitle>
+      </mat-card-header>
+      <!--<img mat-card-image src="https://source.unsplash.com/random/800x600">-->
+      <!--<mat-card-content>-->
+      <!--<p> {{issue.body}}</p>-->
+      <!--</mat-card-content>-->
+    </a>
   </mat-card>
 
-  <mat-card *ngFor="let issue of (soujava$ | async); trackBy: trackByFn">
-    <mat-card-header>
-      <img mat-card-avatar src="{{issue.user.avatar_url}}">
-      <mat-card-title><a href="{{issue.user.url}}">{{issue.user.login}}</a></mat-card-title>
-      <mat-card-subtitle><a href="{{issue.html_url}}">{{issue.title}}</a></mat-card-subtitle>
-    </mat-card-header>
-    <!--<img mat-card-image src="https://source.unsplash.com/random/800x600">-->
-    <!--<mat-card-content>-->
-    <!--<p> {{issue.body}}</p>-->
-    <!--</mat-card-content>-->
+  <mat-card *ngFor="let issue of (soujava$ | async); trackBy: trackByFn" routerLink="">
+    <a href="{{issue.html_url}}">
+      <mat-card-header>
+        <img mat-card-avatar src="{{issue.user.avatar_url}}">
+        <mat-card-title>{{issue.user.login}}</mat-card-title>
+        <mat-card-subtitle>{{issue.title}}</mat-card-subtitle>
+      </mat-card-header>
+      <!--<img mat-card-image src="https://source.unsplash.com/random/800x600">-->
+      <!--<mat-card-content>-->
+      <!--<p> {{issue.body}}</p>-->
+      <!--</mat-card-content>-->
+    </a>
   </mat-card>
 
-  <mat-card *ngFor="let issue of (androidDevBr$ | async); trackBy: trackByFn">
-    <mat-card-header>
-      <img mat-card-avatar src="{{issue.user.avatar_url}}">
-      <mat-card-title><a href="{{issue.user.url}}">{{issue.user.login}}</a></mat-card-title>
-      <mat-card-subtitle><a href="{{issue.html_url}}">{{issue.title}}</a></mat-card-subtitle>
-    </mat-card-header>
-    <!--<img mat-card-image src="https://source.unsplash.com/random/800x600">-->
-    <!--<mat-card-content>-->
-    <!--<p> {{issue.body}}</p>-->
-    <!--</mat-card-content>-->
+  <mat-card *ngFor="let issue of (androidDevBr$ | async); trackBy: trackByFn" routerLink="">
+    <a href="{{issue.html_url}}">
+      <mat-card-header>
+        <img mat-card-avatar src="{{issue.user.avatar_url}}">
+        <mat-card-title>{{issue.user.login}}</mat-card-title>
+        <mat-card-subtitle>{{issue.title}}</mat-card-subtitle>
+      </mat-card-header>
+      <!--<img mat-card-image src="https://source.unsplash.com/random/800x600">-->
+      <!--<mat-card-content>-->
+      <!--<p> {{issue.body}}</p>-->
+      <!--</mat-card-content>-->
+    </a>
   </mat-card>
+
 </div>
 

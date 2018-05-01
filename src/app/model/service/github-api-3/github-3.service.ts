@@ -12,7 +12,7 @@ export class Github3Service {
    *
    * irá formar a url igual a: https://api.github.com/repos/frontendbr/vagas/issues?state=open
    */
-  public issues(filter: string): Observable<any> {
+  public issues(filter: string = 'state=open'): Observable<any> {
     return this.http.get<any>(`${this.url}${this.repository}/issues?${filter}`);
   }
 }
