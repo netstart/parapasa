@@ -1,8 +1,29 @@
-button{
-  height:20px;
-  width:100px;
+button {
+  height: 20px;
+  width: 100px;
   margin: -20px -50px;
-  position:relative;
-  top:50%;
-  left:50%;
+  position: relative;
+  top: 50%;
+  left: 50%;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-container > mat-card {
+  background-color: #f1f1f1;
+  width: 22%;
+  margin: 4px;
+  /*text-align: center;*/
+  font-size: 12px;
+  transition: all .3s;
+}
+
+.flex-container > mat-card:hover {
+  border-color: #2B85E7;
+  border-radius: 4px;
+  box-shadow: 0 8px 8px rgba(1,67,163,.24), 0 0 8px rgba(1,67,163,.12), 0 6px 18px rgba(43,133,231,.12);
+  transform: translate3d(0,-2px,0);
 }
