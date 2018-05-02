@@ -1,0 +1,7 @@
+# remove ___ (underlines) in the file to enable below configuration
+codecov:
+  branch: master
+
+comment:
+  branches:
+  - master
