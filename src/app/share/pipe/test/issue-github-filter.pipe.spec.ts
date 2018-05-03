@@ -1,4 +1,4 @@
-import { IssueGithubFilterPipe } from './issue-github-filter.pipe';
+import {IssueGithubFilterPipe} from '../issue-github-filter.pipe';
 
 describe('IssueGithubFilterPipe', () => {
   it('create an instance', () => {

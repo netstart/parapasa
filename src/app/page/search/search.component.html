@@ -29,7 +29,7 @@
 <!--</script>-->
 
 
-<div class="flex-container">
+<div class="flex-container" style=" margin: 0 auto;">
   <ng-container *ngFor="let issue of (issuesFrontendBr$ | async); trackBy: trackByFn">
     <mat-card *ngIf="issue | issueGithubFilter:jobDescription.value">
       <a href="{{issue.html_url}}">
