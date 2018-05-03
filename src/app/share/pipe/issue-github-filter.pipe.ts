@@ -1,4 +1,5 @@
 import {Pipe, PipeTransform} from '@angular/core';
+import {isNull, isUndefined} from 'util';
 
 @Pipe({
   name: 'issueGithubFilter'
@@ -6,8 +7,12 @@ import {Pipe, PipeTransform} from '@angular/core';
 export class IssueGithubFilterPipe implements PipeTransform {
 
   transform(issue: any, stringToFilter: string): boolean {
-    return stringToFilter &&
-      (this.containTitle(issue, stringToFilter) || this.containBody(issue, stringToFilter));
+    // press enter in search to booooooommmmmm
+    if (isUndefined(stringToFilter) || isNull(stringToFilter)) {
+      return true;
+    }
+
+    return this.containTitle(issue, stringToFilter) || this.containBody(issue, stringToFilter);
   }
 
   containTitle(issue: any, stringToFilter: string) {
