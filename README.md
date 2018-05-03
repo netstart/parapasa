@@ -30,6 +30,9 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## This project don't use feature folder, the author, Clayton believes that layer folder is better to organize source code
 
 
+## We don't use
+  * JQuery
+
 ## We use:
   - https://angular.io
   - https://material.angular.io/

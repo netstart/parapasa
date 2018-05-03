@@ -8,11 +8,11 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 @NgModule({
   imports: [
-    CommonModule, HttpClientModule, ReactiveFormsModule, RouterModule, BrowserAnimationsModule,
+    CommonModule, HttpClientModule, FormsModule, ReactiveFormsModule, RouterModule, BrowserAnimationsModule,
     MaterialDesignModule
   ],
   exports: [
-    CommonModule, HttpClientModule, ReactiveFormsModule, FormsModule, BrowserAnimationsModule,
+    CommonModule, HttpClientModule, FormsModule, ReactiveFormsModule, RouterModule, BrowserAnimationsModule,
     MaterialDesignModule],
   declarations: []
 })
