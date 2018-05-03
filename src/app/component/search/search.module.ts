@@ -1,11 +1,11 @@
 import {NgModule} from '@angular/core';
-import {ListVacancyComponent} from './list-vacancy/list-vacancy.component';
-import {InputSearchComponent} from './input-search/input-search.component';
+import {IssueCardGithubComponent} from './issue-card-github/issue-card-github.component';
+import {ShareModule} from '../../share/share.module';
 
 @NgModule({
-  imports: [],
-  exports: [ListVacancyComponent, InputSearchComponent],
-  declarations: [ListVacancyComponent, InputSearchComponent]
+  imports: [ShareModule],
+  exports: [IssueCardGithubComponent],
+  declarations: [IssueCardGithubComponent]
 })
 export class SearchModule {
 }

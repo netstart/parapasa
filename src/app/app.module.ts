@@ -18,10 +18,12 @@ import {ServiceModule} from './model/service/service.module';
     BrowserModule,
     ShareModule,
     ComponentModule,
-    PageModule,
     ServiceModule,
     AppRoutingModule,
+
+    PageModule,
   ],
+  exports: [BrowserModule, ShareModule, ComponentModule, ServiceModule],
   providers: [],
   bootstrap: [AppComponent]
 })

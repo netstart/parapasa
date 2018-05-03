@@ -1,0 +1,15 @@
+<ng-container *ngFor="let issue of (issue$ | async); trackBy: trackByFn">
+  <mat-card *ngIf="issue | issueGithubFilter:jobDescription">
+    <a href="{{issue.html_url}}">
+      <mat-card-header>
+        <img mat-card-avatar src="{{issue.user.avatar_url}}">
+        <mat-card-title>{{issue.user.login}}</mat-card-title>
+        <mat-card-subtitle>{{issue.title}}</mat-card-subtitle>
+      </mat-card-header>
+      <!--<img mat-card-image src="https://source.unsplash.com/random/800x600">-->
+      <!--<mat-card-content>-->
+      <!--<p> {{issue.body}}</p>-->
+      <!--</mat-card-content>-->
+    </a>
+  </mat-card>
+</ng-container>
