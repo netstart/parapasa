@@ -16,10 +16,17 @@ export class IssueGithubFilterPipe implements PipeTransform {
   }
 
   containTitle(issue: any, stringToFilter: string) {
-    return issue.title && issue.title.toLowerCase().includes(stringToFilter.toLowerCase());
+    return stringToFilter.split(' ')
+      .some((word: string) =>
+        issue.title && issue.title.toLowerCase().includes(word.toLowerCase())
+      );
+    // return issue.title && issue.title.toLowerCase().includes(stringToFilter.toLowerCase());
   }
 
   containBody(issue: any, stringToFilter: string) {
-    return issue.body && issue.body.toLowerCase().includes(stringToFilter.toLowerCase());
+    return stringToFilter.split(' ')
+      .some((word: string) =>
+        issue.body && issue.body.toLowerCase().includes(word.toLowerCase())
+      );
   }
 }

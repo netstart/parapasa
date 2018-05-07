@@ -11,7 +11,7 @@
     "e2e": "ng e2e",
 
     "travis-ci": "ng lint && ng test --browsers ChromeTravisCi && ng e2e && npm run build",
-    "prepush": "ng lint && ng build --aot --prod && ng test",
+    "prepush": "ng lint && ng build --aot --prod && ng test && ng e2e",
     "source-map": "ng build --prod --source-map"
   },
   "private": true,
