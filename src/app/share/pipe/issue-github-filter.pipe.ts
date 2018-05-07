@@ -20,7 +20,6 @@ export class IssueGithubFilterPipe implements PipeTransform {
       .some((word: string) =>
         issue.title && issue.title.toLowerCase().includes(word.toLowerCase())
       );
-    // return issue.title && issue.title.toLowerCase().includes(stringToFilter.toLowerCase());
   }
 
   containBody(issue: any, stringToFilter: string) {
