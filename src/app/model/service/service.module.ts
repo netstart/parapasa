@@ -6,11 +6,10 @@ import {Github3ReactBrasilService} from './github-api-3/github-3-react-brasil.se
 import {Github3SoujavaService} from './github-api-3/github-3-soujava.service';
 import {Github3AndroidDevBrService} from './github-api-3/github-3-androiddevbr.service';
 import {GithubApi3Module} from './github-api-3/github-api-3.module';
-import {KonngLabsModule} from './konng-labs/konng-labs.module';
 
 @NgModule({
-  imports: [GithubApi3Module, KonngLabsModule],
-  exports: [GithubApi3Module, KonngLabsModule],
+  imports: [GithubApi3Module],
+  exports: [GithubApi3Module],
   declarations: [],
   providers: []
 })

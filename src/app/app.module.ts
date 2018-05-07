@@ -15,10 +15,7 @@ import {ServiceModule} from './model/service/service.module';
     AppComponent
   ],
   imports: [
-    BrowserModule,
-    ShareModule,
-    ComponentModule,
-    ServiceModule,
+    BrowserModule, ShareModule, ComponentModule, ServiceModule,
     AppRoutingModule,
 
     PageModule,
