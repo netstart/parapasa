@@ -24,7 +24,7 @@ export class SearchComponent implements OnInit {
               private backendBrService: Github3BackendbrVagasService,
               private reactBrasilService: Github3ReactBrasilService,
               private soujavaService: Github3SoujavaService,
-              private androidDevBrService: Github3AndroidDevBrService,) {
+              private androidDevBrService: Github3AndroidDevBrService) {
   }
 
   ngOnInit() {
