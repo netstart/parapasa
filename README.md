@@ -11,7 +11,7 @@
 [![dependencies Status](https://david-dm.org/netstart/parapasa/status.svg)](https://david-dm.org/netstart/parapasa)
 [![devDependencies Status](https://david-dm.org/netstart/parapasa/dev-status.svg)](https://david-dm.org/netstart/parapasa?type=dev)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.4.
+This project use [Angular CLI](https://github.com/angular/angular-cli) 
 
 ## Development server
 
