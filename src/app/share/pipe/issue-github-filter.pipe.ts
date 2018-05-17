@@ -8,7 +8,7 @@ export class IssueGithubFilterPipe implements PipeTransform {
 
   transform(issue: any, stringToFilter: string): boolean {
     // press enter in search to booooooommmmmm
-    if (isUndefined(stringToFilter) || isNull(stringToFilter)) {
+    if (stringToFilter === undefined || stringToFilter === null) {
       return true;
     }
 
