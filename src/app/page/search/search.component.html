@@ -1,8 +1,8 @@
 <form (submit)="search()"
       style="min-width: 150px; max-width: 500px;  width: 100%; margin: 0 auto;"
-      matTooltip="Only press enter to boooooommmm!">
+      matTooltip="Aperte enter para mostrar a porra toda... Boooommm!">
   <mat-form-field style="width: 100%;">
-    <input width="200" placeholder="Job from your dream"
+    <input width="200" placeholder="Trabalho dos seus sonhos..."
            matInput #jobDescription>
   </mat-form-field>
 
@@ -30,6 +30,8 @@
 
 
 <div class="flex-container" style=" margin: 0 auto;">
+
+
   <ng-container *ngFor="let issue of (issuesFrontendBr$ | async); trackBy: trackByFn">
     <mat-card *ngIf="issue | issueGithubFilter:jobDescription.value">
       <a href="{{issue.html_url}}">

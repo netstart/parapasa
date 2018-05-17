@@ -1,2 +1,5 @@
 [0507/100710.291:ERROR:exception_handler_server.cc(526)] ConnectNamedPipe: O pipe está sendo fechado. (0xE8)
 [0507/111322.621:ERROR:prune_crash_reports.cc(34)] PruneCrashReportDatabase: Failed to get pending reports
+[0508/125432.416:ERROR:file_io_win.cc(161)] CreateFile C:\Users\geral\AppData\Local\Temp\karma-28426720\Crashpad\settings.dat: O sistema não pode encontrar o caminho especificado. (0x3)
+[0508/125432.505:ERROR:file_io_win.cc(170)] CreateFile C:\Users\geral\AppData\Local\Temp\karma-28426720\Crashpad\reports\05491b1c-7207-49bd-9adc-c16bda57b260.dmp: O sistema não pode encontrar o caminho especificado. (0x3)
+[0508/125432.505:ERROR:crash_report_exception_handler.cc(97)] PrepareNewCrashReport failed
