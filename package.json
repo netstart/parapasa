@@ -12,7 +12,7 @@
     "travis-ci": "ng lint && ng test --browsers ChromeTravisCi && ng e2e && npm run build",
     "test-chrome-headless": "ng test --karma-config karma-headless.conf.js  --browsers HeadlessChrome",
     "e2e-chrome-headless": "ng e2e --protractor-config protractor-headless.conf.js",
-    "prepush": "ng lint && ng build --aot --prod && ng test && ng e2e",
+    "prepush": "ng lint && ng build --aot --prod && ng test --watch=false && ng e2e",
     "source-map": "ng build --prod --source-map"
   },
   "private": true,
