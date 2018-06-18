@@ -42,7 +42,7 @@
     "@types/jasminewd2": "~2.0.2",
     "@types/node": "~10.3.2",
     "codelyzer": "^4.3.0",
-    "husky": "^1.0.0-rc.6",
+    "husky": "^1.0.0-rc.9",
     "jasmine-core": "~3.1.0",
     "jasmine-spec-reporter": "~4.2.1",
     "karma": "~2.0.2",
