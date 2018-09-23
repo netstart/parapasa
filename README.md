@@ -62,4 +62,7 @@ V55Y - U4H7 - 1DYH - 3MJN - JMHH - 4QZS
 - sonarcloud.io/
 
  
+ Porque este projeto tem este nome?
+ No momento que estava pensando no nome do projeto, minha filha de 3 anos disse:
+ "Papai, a paparapasa protege a tartaruga né?"
  
