@@ -28,7 +28,7 @@ fi
   git init
 
   # inside this git repo we'll pretend to be a new user
-  git config user.name "Travis CI"
+  git config user.name "netstart"
   git config user.email "netstart@gmail.com"
 
   # The first and only commit to this new Git repo contains all the
