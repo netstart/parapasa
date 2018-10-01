@@ -8,8 +8,8 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "travis-ci": "ng lint && ng test --code-coverage --watch=false --browsers HeadlessChrome && npm run e2e-chrome-headless && npm run build --aot --prod",
-    "prepush": "ng lint && ng build --aot --prod && ng test --watch=false --browsers HeadlessChrome && ng e2e",
+    "travis-ci": "ng lint  && ng build --aot --prod && ng test --watch=false --code-coverage --browsers HeadlessChrome && npm run e2e-chrome-headless",
+    "prepush": "ng lint && ng build --aot --prod && ng test --watch=false --browsers HeadlessChrome && npm run e2e-chrome-headless",
     "e2e-chrome-headless": "ng e2e --protractor-config ./e2e/protractor-headless.conf.js",
     "source-map": "ng build --prod --source-map"
   },
