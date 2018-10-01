@@ -37,21 +37,22 @@ before_script:
 
 script:
   # run build script specified in package.json
-  - npm run travis-ci
-  #- ng lint
-  #- ng test --browsers ChromeTravisCi --watch=false --code-coverage
+  #- npm run travis-ci
+  - ng lint
+  - ng test --browsers ChromeTravisCi --watch=false --code-coverage
   # - ng e2e
   - ng build --aot --prod --base-href "https://netstart.github.io/parapasa/" # https://github.com/angular/angular-cli/wiki/stories-github-pages
 
   - codecov
   - cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js
 
-  # call script for deploying of produced artifacts
-  - bash ./.travis-deploy-gh-pages.sh
 
 after_script:
   branches:
     only:
     - master
     - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
+
+    # call script for deploying of produced artifacts
+    - bash ./.travis-deploy-gh-pages.sh
 
