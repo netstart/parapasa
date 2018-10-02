@@ -17,6 +17,7 @@ addons:
 cache:
   directories:
   - $HOME/.npm
+
 before_install:
   - export CHROME_BIN=chromium-browser
   - export DISPLAY=:99.0
@@ -46,14 +47,11 @@ script:
 
   - codecov
   - cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js
+  - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
 
 
-after_script:
-  branches:
-    only:
-    - master
-    - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
+  # call script for deploying of produced artifacts
+  - bash ./.travis-deploy-gh-pages.sh #run only on master
 
-    # call script for deploying of produced artifacts
-    - bash ./.travis-deploy-gh-pages.sh
+
 
