@@ -49,9 +49,12 @@ script:
   - cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js
   - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
 
+after_script:
+  on:
+    branches: master
+    # call script for deploying of produced artifacts
+    - bash ./.travis-deploy-gh-pages.sh #run only on master
 
-  # call script for deploying of produced artifacts
-  - bash ./.travis-deploy-gh-pages.sh #run only on master
 
 
 
