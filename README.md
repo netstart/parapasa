@@ -1,7 +1,7 @@
 # Parapasa
 [![Build Status](https://travis-ci.org/netstart/parapasa.svg?branch=master)](https://travis-ci.org/netstart/parapasa)
 [![CodeFactor](https://www.codefactor.io/repository/github/netstart/parapasa/badge)](https://www.codefactor.io/repository/github/netstart/parapasa)
-[![BCH compliance](https://bettercodehub.com/edge/badge/netstart/parapasa?branch=master)](https://bettercodehub.com/)
+
 [![codebeat badge](https://codebeat.co/badges/cf916cbf-c6e0-4471-a450-e72e242de321)](https://codebeat.co/projects/github-com-netstart-parapasa-master)
 [![Known Vulnerabilities](https://snyk.io/test/github/netstart/parapasa/badge.svg?targetFile=package.json)](https://snyk.io/test/github/netstart/parapasa?targetFile=package.json)
 [![Maintainability](https://api.codeclimate.com/v1/badges/e578fb2b6fa6e2adbda1/maintainability)](https://codeclimate.com/github/netstart/parapasa/maintainability)
@@ -57,6 +57,7 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 - https://about.pullapprove.com/
 - https://github.com/marketplace/pull-reminders
 - https://github.com/marketplace/renovate/
+- https://bettercodehub.com/edge/badge/netstart/parapasa?branch=master
   
 - Avaliar se dvo usar o logrocket.com para gravar a execucao da aplicação e reportar erros
 
