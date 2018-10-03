@@ -40,6 +40,7 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
   - https://dependabot.com/ - Dependabot creates pull requests to keep your dependencies secure and up-to-date.
   - https://codeclimate.com/github/netstart/parapasa - Code Climate incorporates structure, style, and test coverage data into your development workflow, so your team can ship better code, faster.
   - https://teams.deepaffects.com/github/netstart/parapasa/summary
+  - https://github.com/apps/imgbot (Thank you https://github.com/gustavoquinalha)
 
 
 ## To Evaluate
