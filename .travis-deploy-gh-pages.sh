@@ -24,11 +24,11 @@ fi
 
   # go to the directory which contains build artifacts and create a *new* Git repo
   # directory may be different based on your particular build process
-  cd dist
+  cd dist/parapasa
   git init
 
   # inside this git repo we'll pretend to be a new user
-  git config user.name "Travis CI"
+  git config user.name "netstart"
   git config user.email "netstart@gmail.com"
 
   # The first and only commit to this new Git repo contains all the
