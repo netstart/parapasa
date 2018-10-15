@@ -1,17 +1,22 @@
 # Parapasa
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/8e00d80e755e457ba2d7fe456f76329d)](https://app.codacy.com/app/netstart/parapasa?utm_source=github.com&utm_medium=referral&utm_content=netstart/parapasa&utm_campaign=Badge_Grade_Dashboard)
 [![Build Status](https://travis-ci.org/netstart/parapasa.svg?branch=master)](https://travis-ci.org/netstart/parapasa)
+[![Build Status](https://semaphoreci.com/api/v1/netstart/parapasa-4/branches/pull-request-92/badge.svg)](https://semaphoreci.com/netstart/parapasa-4)
+
+[![Test Coverage](https://api.codeclimate.com/v1/badges/e578fb2b6fa6e2adbda1/test_coverage)](https://codeclimate.com/github/netstart/parapasa/test_coverage)
+
 [![CodeFactor](https://www.codefactor.io/repository/github/netstart/parapasa/badge)](https://www.codefactor.io/repository/github/netstart/parapasa)
+[![Coverage Status](https://coveralls.io/repos/github/netstart/parapasa/badge.svg?branch=master)](https://coveralls.io/github/netstart/parapasa?branch=master)
 
 [![codebeat badge](https://codebeat.co/badges/cf916cbf-c6e0-4471-a450-e72e242de321)](https://codebeat.co/projects/github-com-netstart-parapasa-master)
-[![Known Vulnerabilities](https://snyk.io/test/github/netstart/parapasa/badge.svg?targetFile=package.json)](https://snyk.io/test/github/netstart/parapasa?targetFile=package.json)
 [![Maintainability](https://api.codeclimate.com/v1/badges/e578fb2b6fa6e2adbda1/maintainability)](https://codeclimate.com/github/netstart/parapasa/maintainability)
-[![Test Coverage](https://api.codeclimate.com/v1/badges/e578fb2b6fa6e2adbda1/test_coverage)](https://codeclimate.com/github/netstart/parapasa/test_coverage)
-[![Coverage Status](https://coveralls.io/repos/github/netstart/parapasa/badge.svg?branch=master)](https://coveralls.io/github/netstart/parapasa?branch=master)
 [![codecov](https://codecov.io/gh/netstart/parapasa/branch/master/graph/badge.svg)](https://codecov.io/gh/netstart/parapasa)
+
 [![dependencies Status](https://david-dm.org/netstart/parapasa/status.svg)](https://david-dm.org/netstart/parapasa)
 [![devDependencies Status](https://david-dm.org/netstart/parapasa/dev-status.svg)](https://david-dm.org/netstart/parapasa?type=dev)
+
 [![DepShield Badge](https://depshield.sonatype.org/badges/{owner}/{repository}/depshield.svg)](https://depshield.github.io)
+[![Known Vulnerabilities](https://snyk.io/test/github/netstart/parapasa/badge.svg?targetFile=package.json)](https://snyk.io/test/github/netstart/parapasa?targetFile=package.json)
 
 This project use [Angular CLI](https://github.com/angular/angular-cli) 
 
