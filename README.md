@@ -1,4 +1,5 @@
 # Parapasa
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/8e00d80e755e457ba2d7fe456f76329d)](https://app.codacy.com/app/netstart/parapasa?utm_source=github.com&utm_medium=referral&utm_content=netstart/parapasa&utm_campaign=Badge_Grade_Dashboard)
 [![Build Status](https://travis-ci.org/netstart/parapasa.svg?branch=master)](https://travis-ci.org/netstart/parapasa)
 [![Build Status](https://semaphoreci.com/api/v1/netstart/parapasa-4/branches/pull-request-92/badge.svg)](https://semaphoreci.com/netstart/parapasa-4)
 
