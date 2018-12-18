@@ -1,10 +1,12 @@
 import {Component, OnInit} from '@angular/core';
 import {Github3FrontendbrService} from '../../model/service/github-api-3/github-3-frontendbr.service';
-import {combineLatest, concat, forkJoin, merge, Observable, zip, pipe} from 'rxjs';
+import {merge, Observable} from 'rxjs';
 import {Github3BackendbrVagasService} from '../../model/service/github-api-3/github-3-backendbr-vagas.service';
 import {Github3ReactBrasilService} from '../../model/service/github-api-3/github-3-react-brasil.service';
 import {Github3SoujavaService} from '../../model/service/github-api-3/github-3-soujava.service';
 import {Github3AndroidDevBrService} from '../../model/service/github-api-3/github-3-androiddevbr.service';
+import {Github3EcommItService} from '../../model/service/github-api-3/github-3-ecommit.service';
+
 // import {mergeMap} from 'rxjs/internal/operators';
 
 @Component({
@@ -19,6 +21,7 @@ export class SearchComponent implements OnInit {
   reactBrasilService$: Observable<any>;
   soujava$: Observable<any>;
   androidDevBr$: Observable<any>;
+  ecommIt$: Observable<any>;
 
   // consolidateIssues$: Observable<any>;
 
@@ -28,7 +31,8 @@ export class SearchComponent implements OnInit {
               private backendBrService: Github3BackendbrVagasService,
               private reactBrasilService: Github3ReactBrasilService,
               private soujavaService: Github3SoujavaService,
-              private androidDevBrService: Github3AndroidDevBrService) {
+              private androidDevBrService: Github3AndroidDevBrService,
+              private ecommItService: Github3EcommItService) {
   }
 
   ngOnInit() {
@@ -40,8 +44,9 @@ export class SearchComponent implements OnInit {
     this.reactBrasilService$ = this.reactBrasilService.issues();
     this.soujava$ = this.soujavaService.issues();
     this.androidDevBr$ = this.androidDevBrService.issues();
+    this.ecommIt$ = this.ecommItService.issues();
 
-    this.all$ = merge(this.backendBrService$, this.issuesFrontendBr$, this.reactBrasilService$, this.soujava$, this.androidDevBr$);
+    this.all$ = merge(this.backendBrService$, this.issuesFrontendBr$, this.reactBrasilService$, this.soujava$, this.androidDevBr$, this.ecommIt$);
 
 
     // https://github.com/ReactiveX/rxjs/blob/master/MIGRATION.md#deprecated
