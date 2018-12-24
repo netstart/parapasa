@@ -36,7 +36,7 @@
     "@angular/compiler-cli": "^6.1.10",
     "@angular/language-service": "^6.1.10",
     "@types/jasmine": "~2.8.8",
-    "@types/jasminewd2": "~2.0.5",
+    "@types/jasminewd2": "~2.0.6",
     "@types/node": "~8.10.31",
     "codelyzer": "~4.5.0",
     "husky": "^1.1.2",
