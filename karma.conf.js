@@ -16,8 +16,8 @@ module.exports = function (config) {
       clearContext: false // leave Jasmine Spec Runner output visible in browser
     },
     coverageIstanbulReporter: {
-      dir: require('path').join(__dirname, '../coverage'),
-      reports: ['html', 'lcovonly'],
+      dir: require('path').join(__dirname, './coverage/parapasa'),
+      reports: ['html', 'lcovonly', 'text-summary'],
       fixWebpackSourcePaths: true
     },
     reporters: ['progress', 'kjhtml'],
@@ -27,6 +27,7 @@ module.exports = function (config) {
     autoWatch: true,
     browsers: ['Chrome'],
     singleRun: false,
+    restartOnFileChange: true,
 
     // configuração adicionada para rodar o chorme sem aparecer a janela
     customLaunchers: {
@@ -34,6 +35,7 @@ module.exports = function (config) {
       //  ng test --karma-config karma-headless.conf.js  --browsers HeadlessChrome
       //  ng test --browsers HeadlessChrome
 
+      //  ng test --browsers HeadlessChromium
       HeadlessChromium: {
         base: 'Chromium',
         flags: [
@@ -44,6 +46,7 @@ module.exports = function (config) {
         ]
       },
 
+      //  ng test --browsers HeadlessChrome
       HeadlessChrome: {
         base: 'Chrome',
         flags: [
@@ -58,8 +61,6 @@ module.exports = function (config) {
         base: 'Chrome',
         flags: ['--no-sandbox']
       }
-    },
-    browserNoActivityTimeout: 30000,
-
+    }
   });
 };
