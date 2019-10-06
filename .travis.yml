@@ -49,7 +49,7 @@ script:
   - ng build --aot --prod --base-href "https://netstart.github.io/parapasa/" # https://github.com/angular/angular-cli/wiki/stories-github-pages
 
   - codecov
-  - cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js
+  - cat ./coverage/parapasa/lcov.info | ./node_modules/coveralls/bin/coveralls.js
   - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
 
   # call script for deploying of produced artifacts
