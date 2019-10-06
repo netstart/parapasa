@@ -35,6 +35,7 @@ module.exports = function (config) {
       //  ng test --karma-config karma-headless.conf.js  --browsers HeadlessChrome
       //  ng test --browsers HeadlessChrome
 
+      //  ng test --browsers HeadlessChromium
       HeadlessChromium: {
         base: 'Chromium',
         flags: [
@@ -45,6 +46,7 @@ module.exports = function (config) {
         ]
       },
 
+      //  ng test --browsers HeadlessChrome
       HeadlessChrome: {
         base: 'Chrome',
         flags: [
