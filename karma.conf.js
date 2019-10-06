@@ -27,6 +27,38 @@ module.exports = function (config) {
     autoWatch: true,
     browsers: ['Chrome'],
     singleRun: false,
-    restartOnFileChange: true
+    restartOnFileChange: true,
+
+    // configuração adicionada para rodar o chorme sem aparecer a janela
+    customLaunchers: {
+      // Opções
+      //  ng test --karma-config karma-headless.conf.js  --browsers HeadlessChrome
+      //  ng test --browsers HeadlessChrome
+
+      HeadlessChromium: {
+        base: 'Chromium',
+        flags: [
+          '--no-sandbox',
+          '--headless',
+          '--disable-gpu',
+          '--remote-debugging-port=9222',
+        ]
+      },
+
+      HeadlessChrome: {
+        base: 'Chrome',
+        flags: [
+          '--headless',
+          '--disable-gpu',
+          '--remote-debugging-port=9222',
+          //'--window-size=1024,768'
+        ]
+      },
+
+      ChromeTravisCi: {
+        base: 'Chrome',
+        flags: ['--no-sandbox']
+      }
+    }
   });
 };
