@@ -14,6 +14,9 @@ env:
 
 addons:
   chrome: stable
+  code_climate:
+    repo_token:
+      secure: a755d3a7a40d2f0b27f4e56011fcce2f6a9014b46d0ce01308ffa91462819c66
 cache:
   directories:
   - $HOME/.npm
@@ -22,44 +25,37 @@ before_install:
   - export CHROME_BIN=chromium-browser
   - export DISPLAY=:99.0
   - sh -e /etc/init.d/xvfb start
-install:
   - npm i -g npm
   - npm ci
-
-before_script:
+install:
   # install o code climate
-  - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
-  - chmod +x ./cc-test-reporter
-  - ./cc-test-reporter before-build
+  #  - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
+  #  - chmod +x ./cc-test-reporter
+  #  - ./cc-test-reporter before-build
 
   - npm install
-
   # install codecov and coveralls
   - npm install -g codecov
-  - npm install coveralls
+  - npm install -g coveralls
+  - npm install -g codeclimate-test-reporter
+
+before_script:
 
 script:
-  # run build script specified in package.json
-
   - npm run travis-ci
-  #- ng lint
-  #- ng test --browsers ChromeTravisCi --watch=false --code-coverage
-  # - ng e2e
 
   - ng build --aot --prod --base-href "https://netstart.github.io/parapasa/" # https://github.com/angular/angular-cli/wiki/stories-github-pages
 
   - codecov
   - cat ./coverage/parapasa/lcov.info | ./node_modules/coveralls/bin/coveralls.js
-  - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
+  # - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
 
+  - codeclimate-test-reporter < ./coverage/parapasa/lcov.info
+  -
   # call script for deploying of produced artifacts
   - bash ./.travis-deploy-gh-pages.sh #run only on master
 
 #after_script:
 #  on:
 #    branches: master
-
-
-
-
 
