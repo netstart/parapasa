@@ -1,0 +1,73 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: weekly
+    time: "09:00"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: "@angular/cli"
+    versions:
+    - 11.1.1
+    - 11.1.2
+    - 11.1.4
+    - 11.2.0
+    - 11.2.1
+    - 11.2.2
+    - 11.2.3
+    - 11.2.4
+    - 11.2.5
+    - 11.2.6
+    - 11.2.7
+    - 11.2.8
+  - dependency-name: "@angular/language-service"
+    versions:
+    - 11.1.0
+    - 11.1.1
+    - 11.1.2
+    - 11.2.0
+    - 11.2.1
+    - 11.2.3
+    - 11.2.4
+    - 11.2.5
+    - 11.2.6
+    - 11.2.7
+    - 11.2.8
+    - 11.2.9
+  - dependency-name: y18n
+    versions:
+    - 4.0.1
+  - dependency-name: "@types/node"
+    versions:
+    - 14.14.22
+    - 14.14.25
+    - 14.14.28
+    - 14.14.31
+    - 14.14.32
+    - 14.14.34
+    - 14.14.35
+    - 14.14.37
+  - dependency-name: karma
+    versions:
+    - 6.0.1
+    - 6.0.3
+    - 6.1.0
+    - 6.1.1
+    - 6.2.0
+    - 6.3.1
+  - dependency-name: "@types/jasmine"
+    versions:
+    - 3.6.3
+    - 3.6.4
+    - 3.6.6
+    - 3.6.7
+  - dependency-name: lodash
+    versions:
+    - 4.17.20
+  - dependency-name: handlebars
+    versions:
+    - 4.7.6
+  - dependency-name: elliptic
+    versions:
+    - 6.5.3
